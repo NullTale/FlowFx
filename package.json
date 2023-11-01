@@ -1,0 +1,25 @@
+{
+  "name": "www.nulltale.flowfx",
+  "displayName": "FlowFx",
+  "version": "1.0.0",
+  "unity": "2022.1",
+  "description": "Pixel flow post processing fx for unity Urp",
+  "documentationUrl": "https://github.com/NullTale/FlowFx",
+  "licensesUrl": "https://github.com/NullTale/NAME/FlowFx/master/LICENSE.md",
+  "author": {
+    "name": "NullTale",
+    "email": "nulltale@gmail.com",
+    "url": "https://twitter.com/NullTale"
+  },
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "14.0.6"
+  },
+  "hideInEditor": false,
+  "samples": [
+      {
+          "displayName": "Sample Scene",
+          "description": "",
+          "path": "Samples~"
+      }
+    ]
+}
