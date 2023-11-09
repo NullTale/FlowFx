@@ -1,4 +1,4 @@
-Shader "Hidden/VolFx/Flow"
+Shader "Hidden/Vol/Flow"
 {
     HLSLINCLUDE
     

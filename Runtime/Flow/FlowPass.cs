@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.Rendering;
@@ -7,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 //  FlowFx © NullTale - https://twitter.com/NullTale/
 namespace VolFx
 {
-    [ShaderName("Hidden/VolFx/Flow")]
+    [ShaderName("Hidden/Vol/Flow")]
     public class FlowPass : VolFx.Pass
     {
         private static readonly int s_FlowTex = Shader.PropertyToID("_FlowTex");
