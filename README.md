@@ -14,6 +14,7 @@ Part of Artwork Project
 * [GradientMap](https://github.com/NullTale/GradientMapFilter)
 * [ScreenOutline](https://github.com/NullTale/OutlineFilter)
 * [ImageFlow]
+* [Pixelation](https://github.com/NullTale/PixelationFx)
 
 ## Usage
 Install via Unity [PackageManager](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
