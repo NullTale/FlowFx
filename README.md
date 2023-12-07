@@ -1,5 +1,7 @@
 # FlowFx
 
+[![Twitter](https://img.shields.io/badge/Follow-Twitter?logo=twitter&color=white)](https://twitter.com/NullTale)
+[![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale)
 
 Old school Image Flow Effect for Unity Urp, </br>
 Controlled via volume profile, works as render feature
