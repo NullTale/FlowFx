@@ -1,7 +1,7 @@
 {
   "name": "www.nulltale.flowfx",
   "displayName": "FlowFx",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "unity": "2022.1",
   "description": "Pixel flow post processing fx for unity Urp",
   "documentationUrl": "https://github.com/NullTale/FlowFx",

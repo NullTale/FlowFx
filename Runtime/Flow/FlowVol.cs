@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 //  FlowFx © NullTale - https://twitter.com/NullTale/
 namespace VolFx
 {
-    [Serializable, VolumeComponentMenu("Vol/Flow")]
+    [Serializable, VolumeComponentMenu("VolFx/Flow")]
     public sealed class FlowVol : VolumeComponent, IPostProcessComponent
     {
         public ClampedFloatParameter m_Fade   = new ClampedFloatParameter(0, 0, 1, false);

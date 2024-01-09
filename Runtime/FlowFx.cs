@@ -1,3 +1,5 @@
+#if !VOL_FX
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -158,3 +160,5 @@ namespace VolFx
         }
     }
 }
+
+#endif
