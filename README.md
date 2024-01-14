@@ -9,7 +9,7 @@ Controlled via volume profile, works as render feature
 ![_cover](https://github.com/NullTale/FlowFx/assets/1497430/99ddc6d9-e727-4f3f-8b36-9f3d8ec5aebd)
 
 ## Part of Artwork Project
-All effects can work individually or as a part of [VolFx](https://github.com/NullTale/VolFx) framework
+All effects can work individually or as a part of [VolFx](https://github.com/NullTale/VolFx)
 
 * [Vhs](https://github.com/NullTale/VhsFx)
 * [OldMovie](https://github.com/NullTale/OldMovieFx)
