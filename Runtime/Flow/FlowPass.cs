@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 namespace VolFx
 {
     [ShaderName("Hidden/Vol/Flow")]
-    public class FlowPass : VolFx.Pass
+    public class FlowPass : VolFxProc.Pass
     {
         private static readonly int s_FlowTex = Shader.PropertyToID("_FlowTex");
         private static readonly int s_Weight  = Shader.PropertyToID("_Weight");
