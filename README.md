@@ -4,8 +4,8 @@
 [![Discord](https://img.shields.io/badge/Discord-Discord?logo=discord&color=white)](https://discord.gg/CkdQvtA5un)
 [![Boosty](https://img.shields.io/badge/Support-Boosty?logo=boosty&color=white)](https://boosty.to/nulltale)
 
-Old school Image Flow Effect for Unity Urp, </br>
-Controlled via volume profile, works as render feature
+Old school Image Flow Effect for Unity Urp, controlled via volume profile </br>
+Works as render feature or a pass for selective post processing [VolFx](https://github.com/NullTale/VolFx)
 
 ![_cover](https://github.com/NullTale/FlowFx/assets/1497430/99ddc6d9-e727-4f3f-8b36-9f3d8ec5aebd)
 
@@ -19,6 +19,7 @@ All effects can work individually or as a part of [VolFx](https://github.com/Nul
 * [ImageFlow]
 * [Pixelation](https://github.com/NullTale/PixelationFx)
 * [Ascii](https://github.com/NullTale/AsciiFx)
+* [Dither](https://github.com/NullTale/DitherFx)
 * ...
 
 ## Usage
