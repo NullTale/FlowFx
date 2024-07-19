@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-//  FlowFx © NullTale - https://twitter.com/NullTale/
+//  FlowFx © NullTale - https://x.com/NullTale
 namespace VolFx
 {
     public static class VolFxProc
