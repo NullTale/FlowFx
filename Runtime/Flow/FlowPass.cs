@@ -3,7 +3,7 @@ using UnityEngine.Experimental.Rendering;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-//  FlowFx © NullTale - https://twitter.com/NullTale/
+//  FlowFx © NullTale - https://x.com/NullTale
 namespace VolFx
 {
     [ShaderName("Hidden/Vol/Flow")]
@@ -24,6 +24,7 @@ namespace VolFx
         private float            _scaleUv;
         private float            _rotUv;
         private float            _lastDraw;
+        private float            _print;
         
         private ProfilingSampler _sampler;
         
@@ -47,6 +48,7 @@ namespace VolFx
             }
 
             //var weight = 60f / (1f / Time.deltaTime);
+            _print = settings.m_Print.value;
             
             _main = 1f - settings.m_Fade.value;
             _fade = 1f - _main + settings.m_Strain.value * .5f;
@@ -81,18 +83,22 @@ namespace VolFx
             }
             
             var drawTime = getDrawTime();
+            
+            cmd.SetGlobalVector(s_Weight, new Vector4(_main, _fade, _print));
             if (drawTime - _lastDraw > 1f / _fps)
             {
-                cmd.SetGlobalVector(s_Weight, new Vector4(_main, _fade));
                 cmd.SetGlobalTexture(s_FlowTex, _flow.From.Handle.nameID);
                 cmd.SetGlobalVector(s_Tiling, new Vector4(_offsetUv.x, _offsetUv.y, _scaleUv, _rotUv));
-                Utils.Blit(cmd, source, _flow.To.Handle, _material);
+                Utils.Blit(cmd, source, _flow.To.Handle, _material, 0);
                 _flow.Flip();
                 _lastDraw = drawTime;
             }
             
             cmd.SetGlobalTexture(s_FlowTex, _flow.From.Handle.nameID);
-            Utils.Blit(cmd, source, dest, _material);
+            Utils.Blit(cmd, source, dest, _material, 0);
+            
+            if (_print > 0f)
+                Utils.Blit(cmd, source, dest, _material, 2);
 
             _sampler.End(cmd);
             

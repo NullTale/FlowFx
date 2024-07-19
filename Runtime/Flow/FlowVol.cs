@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
-//  FlowFx © NullTale - https://twitter.com/NullTale/
+//  FlowFx © NullTale - https://x.com/NullTale
 namespace VolFx
 {
     [Serializable, VolumeComponentMenu("VolFx/Flow")]
@@ -11,6 +11,7 @@ namespace VolFx
     {
         public ClampedFloatParameter m_Fade   = new ClampedFloatParameter(0, 0, 1, false);
         public ClampedFloatParameter m_Strain = new ClampedFloatParameter(0, 0, 1, false);
+        public ClampedFloatParameter m_Print  = new ClampedFloatParameter(0f, 0f, 1f, false);
         public FloatParameter        m_Angle  = new FloatParameter(0, false);
         public Vector3Parameter      m_Flow   = new Vector3Parameter(new Vector3(0, 0, 0), false);
 

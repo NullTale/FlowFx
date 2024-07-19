@@ -1,3 +1,4 @@
+//  FlowFx © NullTale - https://x.com/NullTale
 Shader "Hidden/Vol/Flow"
 {
     HLSLINCLUDE
@@ -84,6 +85,32 @@ Shader "Hidden/Vol/Flow"
 	        half4 frag(frag_in i) : SV_Target 
 	        {
 	            return tex2D(_MainTex, i.uv);
+	        }
+			
+			ENDHLSL
+		}
+		
+        Pass	// 2
+		{
+			name "Print"
+
+			Blend SrcAlpha OneMinusSrcAlpha
+			
+			
+	        HLSLPROGRAM
+	        
+			#pragma vertex vert
+			#pragma fragment frag
+			
+	        sampler2D    _MainTex;
+	        float4		 _Weight;
+	        	        
+	        half4 frag(frag_in i) : SV_Target 
+	        {
+	            half4 result =  tex2D(_MainTex, i.uv);
+
+	        	result.a *= _Weight.z;
+	        	return result;
 	        }
 			
 			ENDHLSL
