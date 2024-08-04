@@ -5,10 +5,10 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-//  FlowFx © NullTale - https://twitter.com/NullTale/
+//  FlowFx © NullTale - https://x.com/NullTale
 namespace VolFx.Editor
 {
-    [CustomPropertyDrawer(typeof(VolFxProc.Pass), true)]
+    [CustomPropertyDrawer(typeof(VolFx.Pass), true)]
     public class PassDrawer : PropertyDrawer
     {
         // =======================================================================

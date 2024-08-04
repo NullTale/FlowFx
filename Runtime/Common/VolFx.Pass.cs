@@ -10,7 +10,7 @@ using UnityEngine.Rendering.Universal;
 //  FlowFx © NullTale - https://x.com/NullTale
 namespace VolFx
 {
-    public static class VolFxProc
+    public static class VolFx
     {
         [Serializable]
         public abstract class Pass : ScriptableObject
